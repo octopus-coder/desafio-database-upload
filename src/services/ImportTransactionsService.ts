@@ -1,11 +1,9 @@
 import path from 'path';
 import fs from 'fs';
 import csv from 'csv-parse';
-import { getCustomRepository } from 'typeorm';
 import CreateTransactionService from './CreateTransactionService';
 import Transaction from '../models/Transaction';
 import uploadConfig from '../config/upload';
-import TransactionsRepository from '../repositories/TransactionsRepository';
 
 interface Record {
   title: string;
