@@ -63,8 +63,6 @@ class ImportTransactionsService {
       type,
       category,
     });
-    const transactionsRepository = getCustomRepository(TransactionsRepository);
-    await transactionsRepository.save(transaction);
     return transaction;
   }
 }
